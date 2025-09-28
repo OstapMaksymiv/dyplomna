@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+:root {
+  --background: #ffffff ;
+  --foreground: #0A0A0A;
+  --text_wh:#131014;
+  --text_bl:#ffffff ;
+  --bg_wh:100
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0A0A0A;
+    --foreground: #ffffff;
+    --text_wh:#ffffff ;
+    --text_bl:#131014;
+    --bg_wh:0
+
+  }
+} 
+
+body{
+  background: var(--background);
+  color: white;
+  scroll-behavior: smooth;
+}
+.text_change{
+  color:var(--text_wh) ;
+}
+.bg_change{
+  filter: invert(var(--bg_wh));
+}
+.hr_s{
+  width: 100%;
+  height: 1px;
+  background-color: #b5b5b5;
+  border: none;
+}
+.budgix{
+    font-size: 16px;
+    font-weight: 800;
+    font-family: Shadows Into Light, cursive;
+}
+

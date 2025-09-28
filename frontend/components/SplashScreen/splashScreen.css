@@ -1,0 +1,19 @@
+.swiperADW{
+
+    height: 700px ;
+    position: relative;
+    .swiper-slide {
+        display: flex;
+        width: 500px !important;
+        img{
+            width: 500px;
+            height: 700px;
+ 
+        }
+    }
+
+    .swiper-wrapper{
+        transition-timing-function: linear !important;
+       
+    }
+}
